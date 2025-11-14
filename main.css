@@ -323,7 +323,25 @@ form input.submit-button:active {
 a {
   color: rgb(242, 179, 200);
 }
-
+.gallery {
+  width: 100%;
+  /*display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500vw, 1fr));*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+.galleryImg {
+  width: 33%;
+  object-fit: contain;
+  @media (max-width: 1400px) {
+    width: 44%;
+  }
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+}
 /* 
 SCROLLBAR
 */
